@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
+const MODEL = process.env.MODEL;
 
 const chatbotService = async (mensagem) => {
   try {
@@ -14,7 +15,7 @@ const chatbotService = async (mensagem) => {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        model: 'openai/gpt-3.5-turbo',
+        model: MODEL,
         messages: [
           {
             role: 'system',
