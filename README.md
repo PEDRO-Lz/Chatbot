@@ -18,9 +18,9 @@ Projeto de chatbot que pode ter o prompt e o modelo IA personalizados, neste cas
 
 ## Como Rodar
 
-Cadastre-se em OpenRouter e gere sua chave.
+Cadastre-se em [OpenRouter](https://openrouter.ai/) e gere sua chave.
 
-Crie um arquivo .env:
+Crie um arquivo .env em backend/ com o conteúdo:
 ```bash
 PORT=3000
 OPENROUTER_API_KEY=sua_chave
